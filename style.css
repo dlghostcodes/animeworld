@@ -1,0 +1,379 @@
+:root {
+  --primary-color: #051541;
+  --secondary-color: #cf3821;
+  --hover-color1: #000080;
+  --h0ver-color2: #800000;
+  --max-width: 1100px;
+  --dark-color: #333;
+  --light-color: #eee;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "lato", sans-serif;
+  line-height: 1.4;
+}
+/* utility classes */
+.container {
+  padding: 0.5rem;
+  max-width: var(--max-width);
+  margin: auto;
+}
+img {
+  width: 200px;
+}
+p {
+  margin-top: 1rem;
+}
+.card {
+  background-color: #ccc;
+  color: #333;
+  padding: 1rem;
+}
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul li {
+  list-style: none;
+}
+span {
+  color: var(--secondary-color);
+}
+.current {
+  background-color: var(--secondary-color);
+  padding: 0.55rem;
+  border-radius: 5px;
+}
+.l-heading {
+  font-family: "Staatliches", cursive;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+.btn {
+  display: inline-block;
+  background: #333;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  transition: all 0.4s ease-in;
+}
+.btn-primary:hover {
+  background: var(--hover-color1);
+}
+.btn-primary {
+  background-color: var(--primary-color);
+}
+.btn-secondary {
+  background-color: var(--secondary-color);
+}
+.btn-secondary:hover {
+  background-color: var(--h0ver-color2);
+}
+.bg-dark {
+  background-color: var(--dark-color);
+  color: #fff;
+  padding: 0 2rem;
+}
+.bg-light {
+  background-color: var(--light-color);
+  color: #333;
+  padding: 0 2rem;
+}
+.bg-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0 2rem;
+}
+.bg-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 0 2rem;
+}
+.bg-hover1 {
+  background-color: var(--hover-color1);
+  color: #fff;
+  padding: 0 2rem;
+}
+.bg-hover2 {
+  background-color: var(--h0ver-color2);
+  color: #fff;
+  padding: 0 2rem;
+}
+
+.catergory {
+  display: inline-block;
+  background: #333;
+  text-transform: uppercase;
+  font-size: 0.55rem;
+  padding: 0.5rem 0.55rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: #fff;
+  border-radius: 15px;
+}
+.action {
+  background: #000;
+}
+.shounen {
+  background: purple;
+}
+.isekai {
+  background: var(--hover-color1);
+}
+.adventure {
+  background: cornflowerblue;
+}
+.sport {
+  background: var(--h0ver-color2);
+  color: inherit;
+}
+.hentai {
+  background: #ccc;
+  color: #333;
+}
+
+/* navbar */
+#navbar {
+  background-color: var(--primary-color);
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+#navbar .container {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+#navbar .container ul {
+  display: flex;
+}
+#navbar ul li a {
+  margin: 0 1rem;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+#navbar ul li a:hover {
+  color: var(--h0ver-color2);
+}
+/* showcase */
+#showcase {
+  background: #333;
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+#showcase .showcase-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 50vh;
+  position: relative;
+  left: 0;
+  top: 0;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+#showcase .showcase-container img {
+  width: 270px;
+  height: 100%;
+  margin: 0 2rem;
+  z-index: 2;
+}
+
+#showcase .showcase-container .showcase-content {
+  margin: 0 1rem;
+  text-align: center;
+  z-index: 2;
+}
+#showcase aside {
+  z-index: 2;
+  color: #fff;
+  justify-self: end;
+}
+#showcase::before {
+  content: "";
+  background: url(./photo/Dice\ Fire\ IPhone\ Wallpaper\ HD\ -\ IPhone\ Wallpapers.png)
+    no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.4;
+}
+#home-article {
+  background-color: var(--primary-color);
+}
+#home-article .article-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+#home-article .container {
+  background: var(--light-color);
+  color: #333;
+}
+
+#home-article .article-container > *:first-child,
+#home-article .article-container > *:nth-child(3),
+#home-article .article-container > *:nth-child(5),
+#home-article .article-container > *:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: 1 / span 2;
+  gap: 1rem;
+}
+#main-footer {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+#main-footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  justify-content: center;
+}
+#main-footer .container > *:last-child {
+  background-color: #777;
+  grid-column: 1 / span 4;
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 0.75rem;
+}
+#main-footer .container > *:nth-child(2) input {
+  padding: 0.5rem;
+  width: 90%;
+  margin-top: 0.4rem;
+}
+#main-footer .container > *:nth-child(3) li {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-bottom: 1px dotted #777;
+}
+#main-footer .container > *:nth-child(3) a:hover {
+  color: var(--h0ver-color2);
+}
+#main-footer .container > *:nth-child(4) a {
+  margin-bottom: 0.5rem;
+}
+#main-footer .container > *:first-child h1,
+#main-footer .container > *:nth-child(4) h2 {
+  font-size: 1.5rem;
+}
+#about {
+  background: #777;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+#about::before {
+  content: "";
+  background: url(./photo/Hoodie\ Ninja\ IPhone\ Wallpaper\ HD\ -\ IPhone\ Wallpapers.png)
+    no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+#about .about-container {
+  display: flex;
+  align-items: start;
+}
+#about .about-container .card {
+  z-index: 2;
+}
+#about .about-container aside {
+  margin: 0 2rem;
+  padding: 0.5rem;
+  z-index: 2;
+}
+#about .about-container aside li {
+  padding: 10px;
+  text-align: center;
+}
+#contact .contact-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  gap: 2rem;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+#contact .contact-container aside {
+  z-index: 2;
+}
+#contact .contact-container > *:first-child {
+  grid-row: 1 / span 3;
+  z-index: 2;
+}
+#contact .contact-container > *:last-child {
+  background-color: var(--primary-color);
+  color: #fff;
+  z-index: 2;
+}
+#contact .form-warp {
+  text-align: start;
+  padding: 2rem;
+  font-size: 0.65;
+}
+#contact .form-warp label,
+#contact .form-warp input {
+  display: block;
+  padding: 0.5rem;
+  width: 100%;
+}
+#contact .form-warp textarea {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+}
+#contact {
+  background: #333;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#contact::before {
+  content: "";
+  background: url(/photo/rimuru\ bg.jpg) no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
