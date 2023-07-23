@@ -1,0 +1,8 @@
+.items {
+  display: block;
+  padding: 1rem;
+}
+.item {
+  display: flex;
+  text-align: left;
+}
